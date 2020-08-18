@@ -2,7 +2,7 @@
   "title": "Capslock Enhancement",
   "author": "Vonng(fengruohang@outlook.com)",
   "homepage": "https://github.com/Vonng/Capslock",
-  "hostpage": "https://pqrs.org/osx/karabiner/complex_modifications/",
+  "hostpage": "https://ke-complex-modifications.pqrs.org/",
   "manual": "https://github.com/Vonng/Capslock/tree/master/mac",
   "import_url": "karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/Vonng/Capslock/master/mac/capslock.json",
   "rules": [
@@ -1856,11 +1856,7 @@
           },
           "to": [
             {
-              "key_code": "volume_decrement",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
+              "key_code": "volume_decrement"
             }
           ],
           "type": "basic"
@@ -1879,11 +1875,7 @@
           },
           "to": [
             {
-              "key_code": "volume_increment",
-              "modifiers": [
-                "left_shift",
-                "left_option"
-              ]
+              "key_code": "volume_increment"
             }
           ],
           "type": "basic"
@@ -2258,7 +2250,7 @@
           },
           "to": [
             {
-              "key_code": "1",
+              "key_code": "semicolon",
               "modifiers": [
                 "left_shift"
               ]

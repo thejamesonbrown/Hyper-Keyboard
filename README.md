@@ -1,8 +1,4 @@
-# Capslock
-
-*Make CapsLock Great Again!*  
-
-![](images/trump.jpg)
+# Hyper Keyboard
 
 
 
@@ -14,7 +10,6 @@
 * Well-Designed:  High-Freq key in hot-area. Bring lots of useful functionalities.
 * Compatiable: Work well with other modifiers, appliactions, devices.
 * Light-Weight:  Just a small script, carry it everywhere !
-* [Design Document](design.md)
 
 
 
@@ -329,25 +324,7 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 ## About
 
-Author：Vonng (fengruohang@outlook.com)
-
-License：WTFPL
-
-![](https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/WTFPL_logo.svg/140px-WTFPL_logo.svg.png)
-
-```
-Do What The Fuck you want to Public License
-
-Version 1.0
-Copyright (C) 2018 Feng Ruohang (Vonng).
-Everyone is permitted to copy and distribute verbatim copies
-of this license document, but changing it is not allowed.
-
-Ok, the purpose of this license is simple
-and you just
-
-DO WHAT THE FUCK YOU WANT TO.
-```
+Author：Jameson Brown
 
 
 
