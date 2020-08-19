@@ -1,12 +1,8 @@
 # Hyper Keyboard
 
+**Transforms Caps Lock into a Hyper key and creates additional keyboard shortcuts.**
 
-
-## Why CapsLock
-
-#### Transform Capslock into *Hyper*, improve your productivity tremendously!
-
-* Powerful: Make Capslock a great new modifier key: **Hyper(✱)**. 
+* Powerful: Make Caps Lock a great new modifier key: **Hyper(✱)**. 
 * Well-Designed:  High-Freq key in hot-area. Bring lots of useful functionalities.
 * Compatiable: Work well with other modifiers, appliactions, devices.
 * Light-Weight:  Just a small script, carry it everywhere !
@@ -14,64 +10,55 @@
 
 
 
-## Platforms
+## Systems
 
-- [CapsLock(Mac)](mac/)  via  [Karabiner-Elements](https://pqrs.org/osx/karabiner/)
-  - macOS High Sierra (10.13)
-  - macOS Sierra (10.12)
-  - macOS EI Capitan (10.11)
-
-
-  - Old [XML]() Version (before OS X 10.11, *no longer maintained*) 
-- [CapsLock(Windows)](win/) via AutoHotKey  *(no longer maintianed)*
+- [Mac](mac/)  via  [Karabiner-Elements](https://karabiner-elements.pqrs.org)
+  - macOS 10.12 (Sierra) - 10.15 (Catalina)
+- [Windows](win/) via AutoHotKey  *(currently not maintained)*
   - Windows XP, Vista, 7, 8, 10
 
 
 
 
-## Install (mac)
+## Install (Mac)
 
-1. Download [Karabiner-Elements](https://pqrs.org/osx/karabiner/) and Install
+1. Download and install [Karabiner-Elements](https://karabiner-elements.pqrs.org).
 
-2. Copy URL to your browser to import configuration script.
-
-```bash
-# This Repo (open in safari)
-karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/Vonng/Capslock/master/mac/capslock.json
-```
+2. Copy the URL to your browser to import the configuration script.
 
 ```bash
-# Karabiner-Elements Offical Script Gallery
-karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs.org%2Fosx%2Fkarabiner%2Fcomplex_modifications%2Fjson%2Fcaps_lock_enhancement.json
+# Open in Safari
+karabiner://karabiner/assets/complex_modifications/import?url=https://raw.githubusercontent.com/thejamesonbrown/Hyper-Keyboard/main/mac/hyper-keyboard.json
 ```
 
-3. Open Karabiner, Tab "ComplexModification", Button "Add Item", and enable entries you like.
-4. Default conf file path is `$HOME/.config/karabiner/assets/complex_modifications`. Modify it if you like.
-5. Enable functions: `[App] karabiner-elements -> [Tab] Complex Modification -> Add Item`
+3. In Karabiner-Elements:
+    1. Open "Complex modifications" tab
+    2. Click "Add Rule" button
+    3. Enable Hyper Keyboard rules
+4. Default config file path is: `$HOME/.config/karabiner/assets/complex_modifications`
+    * Modifications can be made in the .json file
 
 
 
 
-## Usage (mac)
+## Usage (Mac)
 
 ![](images/keyboard.png)
 
-### Basic
+### Basic Function
 
-`✱` Hyper actually maps to `⌃⌥⇧⌘` (all right modifiers) , It works well with additional left modifiers. And compatible with most application. Hold CapsLock to enable `Hyper` funcationality while press it will emit an `Escape`.
+`✱` Hyper actually maps to `⌃⌥⇧⌘` (all right modifier keys). It can also work with the left modifier keys for creating more key combinations. A single Caps Lock press will send `Escape` and holding Caps Lock enables `Hyper`.
 
 | Origin    | Maps to    | Comment                    |
 | --------- | ---------- | -------------------------- |
 | `⇪` Press | `⎋` Escape | Single press to escape     |
-| `⇪` Hold  | `✱`  Hyper | Enable Hyper Functionality |
+| `⇪` Hold  | `✱`  Hyper | Enable Hyper               |
 
-### Navigation
+
+### Text Editing
 
 - Hold  `✱` Hyper to enable navigators
 - Hold additional `⌘` Command for **selection** . (just like holding ⇧shift in normal)
-- Hold additional `⌥`  with `HJKL`  for **mouse movement**
-- Hold additional `⇧` with `HJKL` for **switching tab/app**
-- Hold additional `⌃`  with `HJKL`  for **desktop management** . (just like holding ⌃ctrl with arrow key)
 
 | Origin | Maps to        | Comment                  |
 | ------ | -------------- | ------------------------ |
@@ -87,24 +74,18 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `⌘J`    | `⇧↓` DownArrow  | cursor down and selection         |
 | `⌘K`    | `⇧↑` UpArrow    | cursor up and selection         |
 | `⌘L`    | `⇧→` RightArrow | cursor right and selection         |
+
+
+### Mouse Keys
+
+Emulate mouse movement with the keyboard
+
+| Origin | Maps to        | Comment                  |
+| ------ | -------------- | ------------------------ |
 | `⌥H`    | `←` LeftArrow  | mouse left              |
 | `⌥J`    | `↓` DownArrow  | mouse down              |
 | `⌥K`    | `↑` UpArrow    | mouse up                |
 | `⌥L`    | `→` RightArrow | mouse right             |
-| `⌃H`    | `←` LeftArrow  | expose all              |
-| `⌃J`    | `↓` DownArrow  | show desktops              |
-| `⌃K`    | `↑` UpArrow    | switch prev desktop               |
-| `⌃L`    | `→` RightArrow | switch next desktop        |
-
-
-
-### Mousekey
-
-* Emulate mouse with keyboard
-* Also can be achieved by `⌥` with `HJKL`
-
-| Origin | Maps to        | Comment                  |
-| ------ | -------------- | ------------------------ |
 | `←`    | MouseLeft  | mouse cursor left              |
 | `↓`    | MouseDown  | mouse cursor down              |
 | `↑`    | MouseUp    | mouse cursor up                |
@@ -112,7 +93,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `↩`    | MouseLeft     | mouse left button click           |
 | `⌘↩`    | MouseRight      | mouse right button click |
 
-### Deletion
+
+### Text Deletion
 
 | Origin    | Maps to                            | Comment             |
 | --------- | ---------------------------------- | ------------------- |
@@ -122,10 +104,18 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `.`       | `⌥⌦` Option + Delete               | Delete a word after |
 | `⌘M`,`⌘N` | `⌘⌥⌫` Command+Option+ForwardDelete | Delete to line head |
 
-### Window Control
+
+### Desktop/Window Control
+
+- Hold additional `⇧` with `JK` for **switching applications** (same as Command+Tab)
+- Hold additional `⌃`  with `HJKL` for **desktop management** (same as Control+Arrow Keys)
 
 | Origin           | Maps to                 | Comment                                  |
 | ---------------- | ----------------------- | ---------------------------------------- |
+| `⌃H`    | `←` LeftArrow  | expose all              |
+| `⌃J`    | `↓` DownArrow  | show desktops              |
+| `⌃K`    | `↑` UpArrow    | switch prev desktop               |
+| `⌃L`    | `→` RightArrow | switch next desktop        |
 | `⇥` Tab          | `⌘⇥` Command+Tab        | Switch Window                            |
 | `⌘⇥` Command+Tab | `⌘⇧⇥` Command+Shift+Tab | Switch Window Reversely                  |
 | `Q`              | `⌘Q`                    | Close Window                             |
@@ -136,68 +126,6 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `⌘S`             | `⌃⇧⇥` Ctrl+Shift+Tab    | Swtich Tab Reversely                     |
 | `⌘D`             | `F11`                   | Show Desktop                             |
 
-### Bash Control
-
-- Common bash utils: EOF, SIGINT, SIGTSTP, VIM/Tmux Prefix
-
-| Origin | Maps to     | Comment                                      |
-| ------ | ----------- | -------------------------------------------- |
-| `Z`    | `⌃Z` Ctrl+Z | SIGTSTP                                      |
-| `X`    | `⌃R` Ctrl+R | IDE Run                                      |
-| `C`    | `⌃C`Ctrl+C  | SIGINT                                       |
-| `V`    | `⌃V`Ctrl+V  | Vim Prefix                                   |
-| `B`    | `⌃B`Ctrl+B  | [Tmux](http://tmux.github.io) Default Prefix |
-| `D`    | `⌃D` Ctrl+D | EOF                                          |
-
-#### Applications
-
-- Maybe you'd like overwrite these with your own favorite apps.
-
-| Origin | Maps to                 | Comment                                         |
-| ------ | ----------------------- | ----------------------------------------------- |
-| `E`    | Open Safari             | Open Web Browser                                |
-| `⌘E`   | Open Finder             | Open File Browser                               |
-| `R`    | Open iTerm2             | Great terminal for osx (`Run`)                  |
-| `⌘R`   | Open Preview            | Switch to opened picture, pdf, etc...           |
-| `T`    | Open Visual Studio Code | Text Editor: Visual Studio Code                 |
-| `⌘T`   | Open Typora             | Text Editor: Typora , a great WYSIWYG md editor |
-| `⌘D`   | Open Dictionary         | Find words                                      |
-| `⌘F`   | Open Dash               | Find API Document                               |
-| `F`    | Open Alfred             | Leaves to `⌃⌥⇧⌘F`                               |
-| `G`    | Open Intellij IDEA      | Open IDE                                        |
-| `⌘G`   | Open Chrome             | Google Chrome                                   |
-
-### Functional
-
-- Use F1,…F12 as standard functional keys, while hold hyper to turn them back.
-
-- If you are using RMBP with Bar, consider changing your bar back to function keys with 
-
-  `Karabiner -> Function Keys -> Use all F1, F2, etc. keys as standard function keys  `
-
-| Origin            | Maps to              | Comment                          |
-| ----------------- | -------------------- | -------------------------------- |
-| `F1`              | `BrightnessDown`     |                                  |
-| `F2`              | `BrightnessUp`       |                                  |
-| `F3`              | `ExposeAll`          |                                  |
-| `F4`              | `LaunchPad`          |                                  |
-| `F5`              | `KeyboardLightDown`  |                                  |
-| `F6`              | `KeyboardLightUp`    |                                  |
-| `F7`              | `MusicPrev`          |                                  |
-| `F8`              | `MusicPlay`          |                                  |
-| `F9`              | `MusicNext`          |                                  |
-| `F10`             | `Mute`               |                                  |
-| `F11`             | `VolumeDown`         |                                  |
-| `F12`             | `VolumeUp`           |                                  |
-| `F13` PrintScreen | `MusicPrev`          |                                  |
-| `F14` ScrollLock  | `MusicNext`          |                                  |
-| `F15` Pause       | `MusicPlay`          | Just as it shows                 |
-| `Insert`          | `⌥BrightnessUp`      | Fine grained brightness up       |
-| `Delete`          | `⌥BrightnessDown`    | Fine grained brightness down     |
-| `Home`            | `⌥KeyboardLightUp`   | Fine grained keyboard light up   |
-| `End`             | `⌥KeyboardLightDown` | Fine grained keyboard light down |
-| `PgUp`            | `⌥VolumeUp`          | Fine grained volume up           |
-| `PgDn`            | `⌥VolumeDown`        | Fine grained volume down         |
 
 ### Shifter
 
@@ -222,14 +150,14 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 | `]`  Right Bracket | `)`     | Right Round Bracket `⇧0` |
 | `;` Semicolon      | `!`     | Exclamation              |
 | `'` Single Quote   | `=`     | EqualSign                |
-| `⌘;` Semicolon     | `!`     | Colon                    |
+| `⌘;` Semicolon     | `:`     | Colon                    |
 | `⌘'` Single Quote  | `=`     | EqualSign                |
 
-### Misc
+
+### Miscellaneous
 
 | Origin                 | Maps to             | Comment                                        |
 | ---------------------- | ------------------- | ---------------------------------------------- |
-| `⎋` Escape             | `⇪`  CapsLock       | Bug: Difficult to turn capslock off after emit |
 | `~` BackQuote          | `⌃⇧⌘4`              | macOS Area Screenshot to Clipboard             |
 | `⌘~` Command+BackQuote | `⌃⇧4`               | macOS Area Screenshot to Desktop File          |
 | `⌫` Backspace          | `⌘⌫`                | macOS Delete File                              |
@@ -298,8 +226,6 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
 
 
-
-
 ## FAQ
 
 - Q： Why using ✱ as symbol of hyper key？
@@ -318,15 +244,8 @@ karabiner://karabiner/assets/complex_modifications/import?url=https%3A%2F%2Fpqrs
 
   A:  Apple is really capricious. macOS Sierra changes it's kernel architecture, so the old version karabiner is incompatible with macOS after 10.12. But now there's a new version of karabiner named karabiner-elements. While karabiner-elements use a new JSON-format conf instead of old XML-format. Please using the new version.
 
-  ​
-
 
 
 ## About
 
 Author：Jameson Brown
-
-
-
-
-
